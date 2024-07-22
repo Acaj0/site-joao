@@ -1,22 +1,24 @@
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
+import NavBar from "@/components/ui/NavBar";
 
 export default function Home() {
   return (
     <div>
-      <div className="lg:mx-36 mx-2 flex mt-10 flex-col">
-        <div className=" flex lg:flex-row flex-col min-w-fill">
-          <div className=" flex flex-col">
-            <h1 className="text-5xl md:text-left text-center">
-              João Gabriel Pereira Buso de Souza
+      <NavBar></NavBar>
+      <div className="flex flex-col">
+        <div className=" flex lg:flex-row flex-col min-w-fill h-[700px] md:bg-[url(/foto-main.jpg)] bg-no-repeat bg-cover bg-top">
+          <div className=" lg:mx-36 flex flex-col items-start justify-center md:w-[760px] p-10">
+            <h1 className="text-5xl text-left text-[#202A33]">
+              João Gabriel Buso de Souza
             </h1>
-            <span className=" mt-4 text-wrap text-center md:text-left text-2xl lg:min-w-fit">
-              Advocacia e Consultoria Jurídica
+            <span className=" mt-4 text-wrap text-left text-2xl min-w-fit text-[#202A33]">
+            Advogado em Cuiabá – MT especializado Direito Civel, Área Criminal, Agrario e Empresarial.
             </span>
             <div className="flex flex-row mt-10 gap-10 text-center items-center md:justify-start justify-center">
               <a
                 href="mailto:joaobuso.adv@gmail.com"
-                className="hover:fill-white cursor-pointer h-9 outline px-4 text-center gap-2 flex items-center hover:bg-black hover:text-white dark:hover:bg-white transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 dark:hover:text-black rounded text-xl"
+                className="hover:fill-white cursor-pointer h-9 outline outline-[#202A33] hover:outline-0 px-4 text-center gap-2 flex items-center hover:bg-[#202A33] hover:text-white dark:hover:bg-[#202A33] transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 text-[#202A33] rounded text-xl"
               >
                 <svg
                   width={20}
@@ -66,16 +68,16 @@ export default function Home() {
         <div className="flex flex-col items-center mt-6">
           <h2 className="text-2xl">● Áreas de Atuação</h2>
           <div className="grid grid-rows-2 grid-cols-2 gap-5 mt-6">
-            <div className="hover:bg-black hover:text-white border-black rounded border-2 p-1 h-20 w-40 items-center flex justify-center gap-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
+            <div className="hover:bg-[#202A33] hover:text-white border-[#202A33] rounded border-2 p-1 h-20 w-40 items-center flex justify-center gap-1 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
               Direito Civil
             </div>
-            <div className="hover:bg-black hover:text-white border-black rounded border-2 p-2 h-20 w-40 items-center flex justify-center text-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
+            <div className="hover:bg-[#202A33] hover:text-white border-[#202A33] rounded border-2 p-2 h-20 w-40 items-center flex justify-center text-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
               Direito Empresarial
             </div>
-            <div className="hover:bg-black hover:text-white border-black rounded border-2 p-2 h-20 w-40 items-center flex justify-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
+            <div className="hover:bg-[#202A33] hover:text-white border-[#202A33] rounded border-2 p-2 h-20 w-40 items-center flex justify-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
               Direito Agrário
             </div>
-            <div className="hover:bg-black hover:text-white border-black rounded border-2 p-2 h-20 w-40 items-center flex justify-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
+            <div className="hover:bg-[#202A33] hover:text-white border-[#202A33] rounded border-2 p-2 h-20 w-40 items-center flex justify-center transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-100">
               Criminal
             </div>
           </div>
