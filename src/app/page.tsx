@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <NavBar></NavBar>
       <div className="flex flex-col">
-        <div className=" flex lg:flex-row flex-col min-w-fill h-[700px] md:bg-[url(/foto-main.jpg)] bg-no-repeat bg-cover bg-top">
+        <div className=" flex lg:flex-row flex-col min-w-fill md:h-[700px] md:bg-[url(/foto-main.jpg)] bg-no-repeat bg-cover bg-top">
           <div className=" lg:mx-36 flex flex-col items-start justify-center md:w-[760px] p-10">
             <h1 className="text-5xl text-left text-[#202A33]">
               João Gabriel Buso de Souza
@@ -66,7 +66,7 @@ export default function Home() {
         </div>
         <Separator className="bg-[#202A33]" />
         <div className="flex flex-col items-center mt-8">
-          <h2 className="text-6xl text-[#202A33]">Áreas de Atuação</h2>
+          <h2 className="text-6xl text-center text-[#202A33]">Áreas de Atuação</h2>
           <div className="grid md:grid-rows-2 md:grid-cols-2 grid-rows-4 grid-cols-1 gap-20 mt-10 text-[#202A33]">
             <div className="flex flex-col items-center">
               <div className="border-2 px-2 rounded-md border-[#202A33] group flex-col items-center relative w-[400px] md:w-[450px] mt-3 flex transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 cursor-pointer">
